@@ -1,0 +1,41 @@
+name: L2PlusDemo
+options:
+  bundleIdPrefix: it.ipzs.l2plus
+  deploymentTarget:
+    iOS: "15.0"
+  createIntermediateGroups: true
+packages:
+  L2PlusSDK:
+    path: ../..
+targets:
+  L2PlusDemo:
+    type: application
+    platform: iOS
+    sources:
+      - L2PlusDemo
+    dependencies:
+      - package: L2PlusSDK
+    info:
+      path: L2PlusDemo/Info.plist
+      properties:
+        CFBundleDisplayName: L2+ Demo
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        NFCReaderUsageDescription: Reads the electronic identity card.
+        com.apple.developer.nfc.readersession.iso7816.select-identifiers:
+          - A0000002471001
+          - A0000000308000000009816001
+          - A00000000039
+    entitlements:
+      path: L2PlusDemo/L2PlusDemo.entitlements
+      properties:
+        com.apple.developer.nfc.readersession.formats: [TAG]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: it.ipzs.l2plus.demo
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ""
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"

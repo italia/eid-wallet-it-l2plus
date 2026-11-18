@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">L2+ Demo</string>
+    <string name="access_can">CAN</string>
+    <string name="access_mrz">MRZ data</string>
+    <string name="hint_can">CAN (6 digits)</string>
+    <string name="hint_document_number">Document number</string>
+    <string name="hint_birth_date">Birth date (YYYY-MM-DD)</string>
+    <string name="hint_expiry_date">Expiry date (YYYY-MM-DD)</string>
+    <string name="label_challenge">Challenge (random, normally provided by the backend)</string>
+    <string name="action_new_challenge">New challenge</string>
+    <string name="action_read">Read CIE</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_copy">Copy JSON</string>
+    <string name="status_idle">Enter the access data and tap Read CIE.</string>
+    <string name="copied">Copied</string>
+    <string name="status_done">Read completed</string>
+    <string name="status_error">%1$s (%2$s)\n%3$s</string>
+    <string name="step_waiting">Hold the CIE against the back of the phone</string>
+    <string name="step_detected">Card detected, keep it still</string>
+    <string name="step_mrtd">Reading document data</string>
+    <string name="step_ias">Checking the card</string>
+    <string name="step_verifying">Verifying signatures</string>
+</resources>
